@@ -2,431 +2,333 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="nav.css"/>
-    <title>Responsive Animated Navbar</title>
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <style>
-        *{
-    margin: 0;
-    padding: 0;
-    color: #f2f5f7;
-    font-family: sans-serif;
-    letter-spacing: 1px;
-    font-weight: 300;
+        * {
+	box-sizing: border-box;
 }
 
-@keyframes slidy {
-0% { left: 0%; }
-20% { left: 0%; }
-25% { left: -100%; }
-45% { left: -100%; }
-50% { left: -200%; }
-70% { left: -200%; }
-75% { left: -300%; }
-95% { left: -300%; }
-100% { left: -400%; }
+body {
+	background-image:url(./w.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
 }
 
-body { margin: 0;
- } 
-div#slider { overflow: hidden; 
-margin-top: 10px;}
-div#slider figure img { width: 20%; float: left; }
-div#slider figure { 
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 20s slidy infinite; 
-  
-}
 h1 {
-      text-align: center;
-      color: lightskyblue;
-      text-transform: uppercase;
-      font-size: 40px;
-      text-shadow: 2px 2px 4px grey;
-      animation: bounceIn 2s infinite alternate;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-h2{
-    text-transform: uppercase;
-    animation: bounceOut 6s linear infinite;
-}
-@keyframes bounceOut {
-      0%{
-          transform: skew(18deg);
-      }
-      
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    @keyframes bounceIn {
-      0% {
-        transform: skew(30deg);
-        
-      }
-
-      60% {
-        transform: scale(1.2);
-        opacity: 1;
-      }
-
-      100% {
-        transform: scale(1);
-      }
-    }
-    ul{
-        display: inline-flex;
-        list-style: none;
-        margin-left: 920px;
-        
-    }
-
-    ul li {
-        margin: 15px;
-        
-    }
-
-    ul li a{
-        text-decoration: none;
-        font-size:  25px;
-        color: rgb(253, 253, 253);
-        font-weight: bold;
-        font-family: cursive;
-    }
-
-    ul li a:hover{
-        color:rgb(20, 168, 94);
-    }
-    .header{
-        background-image: url(./10.jpg);
-        border: 5px solid black;
-        margin-top: 10px;
-    }
-.para{
-    margin-top: 10px;
-}
-.img{
-    width: 300px;
-    height: 300px;
-    display: inline-flex;
-    margin-left: 80px;
-    margin-top: 10px;
-    
-}
-.fb{
-    width: 300px;
-    height: 300px;
-    display: inline-flex;
-    margin-left: 150px;
-    margin-top: 20px;
-    animation:  fb 7s linear infinite;
+	font-weight: bold;
+	margin: 0;
 }
 
-@keyframes fb{
-    0%{
-        transform: rotate(10deg);
-    }
-    50%{
-        transform: scale(1.2);
-    }
-    
-    
-
+h2 {
+	text-align: center;
 }
+
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+span {
+	font-size: 12px;
+}
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+
 .container {
-            justify-content: center;
-            align-items: center;
-            margin-left: 300px;
-            
-            display: inline-block;
-            padding: 30px;
-            margin-top: 10px;
-            background: linear-gradient(to left, #3a0516, #c578df, #c50d1c, #b37826);
-            box-shadow: 10px 10px 10px 10px #1e130c;
-            border-radius: 10px;
-            width: 900px;
-            height: 300px;
-        }
-        
-        .login {
-            width: 100%;
-            background-color: red;
-            height: 30px;
-            background: linear-gradient( #8E0E00, #ED213A, #93291E, #fd1d1d, #e35d5b, #e53935, #061161, #fcb045, #780206);
-            font-weight: bolder;
-        }
-        .f{
-            border: 5px solid rgb(247, 242, 219);
-            border-style: ridge;
-            box-shadow:4px 8px black;
-        }
-        .g{
-            border: 5px solid rgb(247, 242, 219);
-            border-style: ridge;
-            box-shadow:4px 8px black;
-        }
-        .y{
-            border: 5px solid rgb(247, 242, 219);
-            border-style: ridge;
-            box-shadow:4px 8px black;
-        }
-        .foot{
-            background:linear-gradient(to top, #f16f05, #11343a, #d41818, #311f07);
-            height: 580px;
-            margin-top: 20px;
-            box-shadow: 1px black;
-        }
-        .b{
-            width: 300px;
-            height: 300px;
-display: inline-flex;
-margin-top: 200px;
-        }
-        .p{
-            width: 400px;
-            border: 8px solid rgb(8, 8, 8);
-            border-style:double;
-            box-shadow: 4px 3px white;
-        }
-        .m{
-            width: 400px;
-            border: 8px solid rgb(8, 8, 8);
-            border-style:double;
-            box-shadow: 4px 3px white;
-        }
-        .d{
-            width: 400px;
-            border: 8px solid rgb(8, 8, 8);
-            border-style:double;
-            box-shadow: 4px 3px white;
-        }
-        .info{
-            display: inline-flex;
-            text-align: center;
-            margin-top: 5px;
-            
-        }
-        .m1 {
-            background: linear-gradient(   to left, #bd650d, #0b535e, #ce3340, #bd650d);
-            width: 420px;
-            height: 180px;
-            margin-right: 20px;
-            margin-left: 5px;
-            margin-top: 10px;
-        }
-        
-        .p1{
-            background: linear-gradient(to right, #6b0425, #0b7080, #ce3340, #bd650d);
-            width: 420px;
-            height: 180px; 
-            margin-right: 20px;
-            margin-left: 96px;
-            margin-top: 10px;
-        }
-        .d1{
-            background: linear-gradient(to left, #6b0425, #074f5a, #ce3340, #bd650d);
-            width: 420px;
-            height: 180px; 
-            margin-right: 20px;
-            margin-left: 6px;
-            margin-top: 10px;
-        }
-        .po{
-            margin-left: -400px;
-            display: inline;
-            
-            
-        }
-        .c{
-            text-align: center;
-            margin-top: 10px;
-        }
-</style>
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.overlay {
+	background: #FF416C;
+	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  	transform: translateX(50%);
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+.social-container {
+	margin: 20px 0;
+}
+
+.social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}
+p{
+    animation: 6s li linear infinite;
+}
+@keyframes li{
+    0%{
+    transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+    </style>
 </head>
-<body style="background-image: linear-gradient(to right,#25040e, #13525e, #77040e, #633609);position: relative;;">
- <h1 style="font-size: 80px;color: rgb(255, 255, 255);font-family: Georgia, 'Times New Roman', Times, serif;background-image: url(./header.jpg);text-align: center;border:3px solid ridge;">𝓢𝓞𝓒𝓘𝓐𝓛 𝓜𝓔𝓓𝓘𝓐</h1>   
-       
- <div class="header">
-        
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
-        <li class="active"><a href="./login.html">Login</a></li>
-    </ul>
- </div>
-   
-<div id="slider">
-<figure>
-<img src="./5.jpeg" alt height="700px">
-<img src="./2.jpg" alt height="700px">
-<img src="./3.jpg" alt height="700px">
-<img src="./soci.jpg" alt height="700px">
-<img src="./1.jpg" alt height="700px">
-</figure>
-</div>
-<h2 style="color: black;font-size: 60px;font-family: cursive;text-align: center;background-image:url(./head.jpg) ;margin-top: 6px;">🆆🅴🅻🅲🅾🅼🅴 🆃🅾 🆂🅾🅲🅸🅰🅻 🅼🅴🅳🅸🅰 🆆🅾🆁🅻🅳</h2>
-<div class="para">
-    <p style="color: white;font-size: 20px;background-image: url(./bac.jpg);font-family: cursive;text-transform: uppercase;text-align: center;">Mobile social media refers to the use of social media on mobile devices such as smartphones and tablet computers. Mobile social media are useful applications of mobile marketing because the creation, exchange, and circulation of user-generated content can assist companies with marketing research, communication, and relationship development.[38] Mobile social media differ from others because they incorporate the current location of the user (location-sensitivity) or the time delay between sending and receiving messages.
-
-        Social media promotes users to share content with others and display content in order to enhance a particular brand or product.[39] Social media allows people to be creative and share interesting ideas with their followers or fans. Certain social media applications such as Twitter, Facebook, and Instagram are places where users share specific political or sports content. Many reporters and journalists produce updates and information on sports and political news. It can truly give users pertinent and necessary information to stay up to date on relevant news stories and topics.</p>
-</div>
-<div class="img">
-<img src="./b3.jpg"  style="margin-left:5%;">
-    <img src="./b1.jpg" style="margin-left:10%">
-    <img src="./b2.jpg" style="margin-left:10%">
-</div>
-<p style="color: white;font-size: 60px;font-family: Arial, Helvetica, sans-serif;text-align: center;margin-top: 5px;">VISIT HERE</p>
-<div class="container">
-    <h3 style="color: white ; text-shadow:4px ">  <span style="color:#fdfdfd">LOGIN</span> DETAILS </h3><br><br>
-
-    <br><br><strong><span style="color:rgb(77, 1, 1);font-size:20px;margin-left:50px"><i class="fa fa-user-circle" style="margin-right: 10px"></i>USER'S ID: </span></strong><br><br> <input type="text" name="username" id="u" placeholder="USER'S ID:"
-        autocomplete="off" style="margin-left:50px;font-size: 20px;"><br><br>
-    <strong><span style="color:rgb(77, 1, 1);font-size:20px;margin-left:50px"><i class="fa fa-unlock-alt" style="margin-right: 10px"></i> LOGIN PASSWORD:</span></strong><br><br> <input type="password" name="password" id="p" placeholder="PASSWORD:"
-        style="font-size: 20px;margin-left:50px"></span>
-
-    <br><br><br> <input type="submit" value="LOGIN" class="login" style="color: black;font-size:20px;" onclick="validate();">
-
-</div>
-</body>
-<script>
-function  validate()  {            
-    var  username  =  document.getElementById("u").value;            
-    var  password  =  document.getElementById("p").value;            
-    if  (username  ==  null  ||  username  ==  "")  {                
-        alert("Please enter the username and password");                
-        return  false;            
-    }            
-
-             
-    if  (password  ==  null  ||  password  ==  "")  {                
-        alert("Please enter the password.");                
-        return  false;            
-    }            
-    alert('Login successful');                    
-}
-</script>
-
-<div class="container">
-    <h3 style="color: white ; text-shadow:4px ">  <span style="color:#fdfdfd">SIGN UP</span> DETAILS </h3><br><br>
-
-    <br><br><strong><span style="color:rgb(77, 1, 1);font-size:20px;margin-left:50px"><i class="fa fa-user-circle" style="margin-right: 10px"></i>USER'S ID: </span></strong><br><br> <input type="text" name="username" id="u" placeholder="USER'S ID:"
-        autocomplete="off" style="margin-left:50px;font-size: 20px;"><br><br>
-    <strong><span style="color:rgb(77, 1, 1);font-size:20px;margin-left:50px"><i class="fa fa-unlock-alt" style="margin-right: 10px"></i> SIGN UP  PASSWORD:</span></strong><br><br> <input type="password" name="password" id="p" placeholder="PASSWORD:"
-        style="font-size: 20px;margin-left:50px"></span>
-
-    <br><br><br> <input type="submit" value="SIGN UP" class="login" style="color: black;font-size:20px;" onclick="validate();">
-
-</div>
-
-<script>
-function  validate()  {            
-    var  username  =  document.getElementById("u").value;            
-    var  password  =  document.getElementById("p").value;            
-    if  (username  ==  null  ||  username  ==  "")  {                
-        alert("Please enter the username and password");                
-        return  false;            
-    }            
-
-             
-    if  (password  ==  null  ||  password  ==  "")  {                
-        alert("Please enter the password.");                
-        return  false;            
-    }            
-    alert('Sign up successful');                    
-}
-</script>
-
-<p style="color:white;font-family:Arial, Helvetica, sans-serif;font-size: 60px;text-align: center;">TECHNOLOGIES</p>
-<h1 style="margin-left: -1200px;margin-bottom: 10px;">1)Facebook</h1>
-<p style="color: white;font-family: cursive;font-size: 20px;background: linear-gradient(to left, #d67594, #460a5a, #49070d, #c97e16);border: 5px solid white;border-style: ridge;">Facebook can be accessed from devices with Internet connectivity, such as personal computers, tablets and smartphones. After registering, users can create a profile revealing information about themselves. They can post text, photos and multimedia which are shared with any other users who have agreed to be their "friend" or, with different privacy settings, publicly. Users can also communicate directly with each other with Facebook Messenger, join common-interest groups, and receive notifications on the activities of their Facebook friends and pages they follow.
-
-</p>
-<h1 style="margin-left: -1220px;margin-top: 10px;margin-bottom: 10px;">2)Google</h1>
-<p style="color: white;font-family: cursive;font-size: 20px;background: linear-gradient(to left, #d67594, #460a5a, #49070d, #c97e16);border: 5px solid white;border-style: ridge;">Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware.With Google Ads, you’re in charge of your online advertising costs. Never pay more than your monthly budget cap, and you can stop any time.
-    Get started
-     </p>
-     <h1 style="margin-left: -1220px;margin-top: 10px;margin-bottom: 10px;">3)Yahoo</h1>
-    <p style="color: white;font-family: cursive;font-size: 20px;background: linear-gradient(to left, #d67594, #460a5a, #49070d, #c97e16);border: 5px solid white;border-style: ridge;">Yahoo (/ˈjɑːhuː/, styled as yahoo!) is an American web services provider. It is headquartered in Sunnyvale, California and operated by the namesake company Yahoo! Inc., which is 90% owned by investment funds managed by Apollo Global Management and 10% by Verizon Communications.
-
-        It provides a web portal, search engine Yahoo Search, and related services, including My Yahoo!, Yahoo Mail, Yahoo News, Yahoo Finance, Yahoo Sports and its advertising platform, Yahoo! Native.
-        
-        Yahoo was established by Jerry Yang and David Filo in January 1994 and was one of the pioneers of the early Internet era in the 1990s. In 2000, it was the most popular website worldwide. Usage declined in the late 2000s as it lost market share to Google. However, Yahoo domain websites are still among the most popular websites, ranking 12th in global engagement according to both Alexa Internet and SimilarWeb.</p> 
-<div class="fb">
-    <img src="./f.jpg"  style="margin-left:5%;" class="f">
-    <img src="./g.jpg" style="margin-left:10%" class="g">
-    <img src="./y.jpg" style="margin-left:10%" class="y">
-</div>
-<p style="color:white;font-family: serif;font-size: 80px;text-align: center;margin-top: 90px;">CONTACT US</p>
-<div class="img">
-    <img src="./pal.jpeg"  style="margin-left:5%" class="p">
-        <img src="./mahi.jpeg" style="margin-left:10%" class="m">
-        <img src="./b2.jpg" style="margin-left:10%">
+<body>
+    <p style="color: white;font-size: 30px;text-align: center;font-weight: bold;">WELCOME! TO SOCIAL MEDIA</p>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fa fa-google"></i></a>
+                    <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="./index1.html" style="background-color: red;border: 3px solid red;padding: 10px 15px;color: white;font-size: 15px;">Sign Up</a>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fa fa-google"></i></a>
+                    <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <a href="./index1.html" style="background-color: red;border: 3px solid red;padding: 10px 15px;color: white;font-size: 15px;">Sign In</a>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="info">
-        <div class="p1">
-            <p style="margin-top: 18px;">Email id:palak.bansal_cs19@gla.ac.in</p>
-            <br>
-            <p>Contact No:9876543210 </p> <br> 
-            <p>GLA UNIVERSITY MATHURA</p>  <br>
-            <p>SOCIAL MEDIA LIMITED</p>  
-         </div>
-        <div class="m1">
-            <p style="margin-top: 18px;">Email id:mahak.agrawal_cs19@gla.ac.in</p>
-            <br>
-            <p>Contact No:9876543210 </p> <br>
-            <p>GLA UNIVERSITY MATHURA</p>  <br>
-            <p>SOCIAL MEDIA LIMITED</p>   
-        </div>
-        <div class="d1">
-            <p style="margin-top: 18px;">Email id:dimpal.agrawal_cs19@gla.ac.in</p>
-            <br>
-            <p>Contact No:9876543210 </p> <br> 
-            <p>GLA UNIVERSITY MATHURA</p>  <br>
-            <p>SOCIAL MEDIA LIMITED</p>  
-        </div>
-        </div>
-<div class="foot">
-   <p style="margin-left: 10px;color: white;font-size: 30px;text-align: center;">ABOUT US</p>
-   <p style="margin-left: 10px;color: white;font-size: 20px;margin-top: 10px;font-family: cursive;">Social media are interactive technologies that allow the creation or sharing and exchange of information, ideas, interests, and other forms of expression through virtual communities and networks. While multiple challenges to the definition of social media arise due to the variety of stand-alone and built-in social media services currently available, there are some features:
+    <script>
+        const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
 
-    Social media are interactive Web 2.0 Internet-based applications.
-    User-generated content—such as text posts or comments, digital photos or videos, and data generated through all online interactions—is the livelihood of social media.
-    Users create service specific profiles for the website or app that are designed and maintained by the social media organization.
-    Social media helps the development of online social networks by connecting a user's profile with those of other individuals or groups.</p>
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
 
-  
-     <p style="color: white;font-size: 30px;font-family: serif;margin-top: 10px;text-align: center;">QUICK LINKS</p>
-<div class="po">
-<ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="./contact.html">Contact Us</a></li>
-        <li class="active"><a href="./login.html">Login</a></li>
-    </ul>
-
-
-</div>
-<p style="margin-left: 5px;text-align: center;">Email id:yahho.cs19@socialmedia.com</p>
-<br>
-<p style="margin-left: 5px;text-align: center;">Contact Info:9876543210,897654321,0123456789</p><br>
-
-<p style="margin-left: 5px;text-align: center;">FAX:31 A tower Building MATHURA</p><br>
-<p style="margin-left: 5px;text-align: center;">FAX:45 A Tower building DELHI</p><br>
-<p style="margin-left: 5px;text-align: center;">FAX:45 A Tower building DAMAN AND DIU</p><br>
-
-<div class="c"><p>Copyright &copy; All Rights Reserved By
-    <a href="https://www.beta-labs.in" style="color:rgb(241, 241, 241);text-decoration:none;list-style:none;">social media.in</a>
-</p>
-</div>
- </div>  
-
-    </body>
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+    </script>
+</body>
 </html>

@@ -8,20 +8,24 @@
 
     <title>LOGIN PAGE</title>
     <style>
+        body{
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         
         .login {
             margin: 200px;
-            margin-left: 600px;
-            margin-top: 260px;
+            margin-left: 550px;
+            margin-top: 80px;
             border-radius: 10px;
-            border: 16px solid rgb(129, 54, 3);
+            border: 10px solid hsl(199, 75%, 44%);
             border-style: ridge;
             display: inline-block;
-            background: linear-gradient(  to top,  #c00909, #1a0746, #810a14, #da7919);
+            background-image: linear-gradient(to left,rgb(32, 127, 190),rgb(39, 188, 207));
             width: 20%;
-            height: 10%;
+            height: 25%;
             padding: 30px;
-            box-shadow: 8px 10px 7px 5px rgb(223, 206, 112);
+            box-shadow: 8px 10px 7px 5px rgb(48, 47, 45);
         }
         
         .loginbtn {
@@ -31,11 +35,11 @@
         #log {
             padding: 5px;
             font-size: 20px;
-            background-color: rgba(79, 79, 231, 0.616);
+            background-image:linear-gradient( to top,orange,red);
             border-radius: 10px;
             width: 150%;
             margin-left: -100px;
-            background: linear-gradient(to right, #fffbd5, #b20a2c);
+            background: linear-gradient( #af0023);
             color: black;
             font-weight: bold;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -51,8 +55,9 @@
             height: 20px;
             width: 58%;
         }
-        .b{
-            animation: bounce 6s linear infinite;
+        h1{
+            animation:5s bounce linear infinite;
+
         }
         @keyframes bounce{
             0%{
@@ -62,12 +67,21 @@
                 transform: scale(1.2);
             }
         }
-       
+        ul{
+        display: inline-flex;
+        list-style: none;
+        margin-left: 820px;
+        
+    }
+
+    
+    
     </style>
 </head>
 
-<body style="background-image:url(./bac.jpg);" class="b">
+<body style="background-image: url(./u.jpg);" class="b">
     
+    <h1  style="color: rgb(255, 255, 255);font-weight: bold;font-family: 'Times New Roman', Times, serif;text-align: center;font-size: 60px;">Please Fill Your Credentials!</h1>
     <div class="login">
         <label for="usern"><b><span style="border:2px solid black;padding:2px;background-color:rgb(241, 227, 227);color:black ;border-radius:5px ">USERNAME</span>  : </b></label>
         <input type="text" placeholder="Enter Username" name="username" id="u" required>
@@ -114,5 +128,5 @@
     }
 </script>
 
-
+ 
 </html>
