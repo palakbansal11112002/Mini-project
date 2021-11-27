@@ -33,17 +33,18 @@
         }
         
         #log {
-            padding: 5px;
+            padding: 10px 90px;
             font-size: 20px;
             background-image:linear-gradient( to top,orange,red);
             border-radius: 10px;
-            width: 150%;
-            margin-left: -100px;
+            width: 180%;
+            margin-left: -50px;
             background: linear-gradient( #af0023);
             color: black;
             font-weight: bold;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             box-shadow: 3px 3px 3px 3px black;
+            text-decoration: none;
         }
         
         #u {
@@ -80,7 +81,7 @@
 </head>
 
 <body style="background-image: url(./u.jpg);" class="b">
-    
+    <a href="./index.html" style="color: white;font-size: 20px;background-color: tomato;padding: 10px;text-decoration: none;">BACK</a>
     <h1  style="color: rgb(255, 255, 255);font-weight: bold;font-family: 'Times New Roman', Times, serif;text-align: center;font-size: 60px;">Please Fill Your Credentials!</h1>
     <div class="login">
         <label for="usern"><b><span style="border:2px solid black;padding:2px;background-color:rgb(241, 227, 227);color:black ;border-radius:5px ">USERNAME</span>  : </b></label>
@@ -101,8 +102,8 @@
         </div>
         <br><br>
         <div class="loginbtn">
-
-            <input type="submit" value="LOGIN" id="log" onclick="validate();">
+             <a href="./index1.html" id="log">LOGIN</a>
+            <!-- <input type="submit" value="LOGIN" id="log" onclick="validate();"> -->
 
 
 
@@ -112,7 +113,7 @@
 </div>
     </div>
 </body>
-<script>
+<!-- <script>
     function  validate()  {            
         var  username  =  document.getElementById("u").value;            
         var  password  =  document.getElementById("p").value;            
@@ -126,7 +127,7 @@
         }            
         alert('Login successful');                    
     }
-</script>
+</script> -->
 
  
 </html>
